@@ -1,11 +1,11 @@
-<h1>All Customers</h1>
+<h1>Customers Missing Email</h1>
 <div class="customers">
   <% @customers.each do |customer| %>
     <%= render partial: 'customer', locals: { customer: customer } %>
   <% end %>
 </div>
 <p>
-  <%= link_to 'Customers Missing Email', customers_missing_email_path %>
+  <%= link_to 'All Customers', root_path %>
   |
   <%= link_to 'Alphabetized Customers', customers_alphabetized_path %>
 </p>
